@@ -1,0 +1,144 @@
+README:
+Team number: 12
+Names: Francis Bolton (100894873), Michael Quach (101179729) , Hugh Xie (101036694), Changyi Zhang (101077983)
+
+COMP 3004 Team Project
+
+------------------------------
+File structure of deliverables
+------------------------------
+├── CES_device
+│   ├── battery.cpp
+│   ├── battery.h
+│   ├── CES_device.pro
+│   ├── CES_device.pro.user
+│   ├── devicecontroller.cpp
+│   ├── devicecontroller.h
+│   ├── main.cpp
+│   ├── mainwindow.cpp
+│   ├── mainwindow.h
+│   ├── mainwindow.ui
+│   ├── sensor.cpp
+│   ├── sensor.h
+│   ├── therapy.cpp
+│   └── therapy.h
+├── comp3004_project_group_12.pdf
+└── README
+
+----------------------
+Who did what
+----------------------
+Hugh Xie
+Countdown cycle
+Current
+Sensor auto start
+General fixes
+Start/stop therapy
+Timer
+Use cases 5 and 6
+Sequence diagrams for use case 5 and 6
+
+Francis Bolton
+Frequency toggle
+Waveform toggle
+Low battery warning and associated logic (incl. battery class implementation)
+UI and device controller initialization methods
+UI visibility when powering on or off
+Signal handling for above features
+General fixes
+Event loop
+Paired programming for therapy saving
+Use cases 3, 4, 9
+Sequence diagrams for UC3 and UC4
+
+Changyi Zhang
+Therapy 
+Save Therapy 
+General fixes and Clean up 
+Therapy Vector implementation
+End Therapy
+Save signals
+On off
+Use Case 1,2,10
+Sequence Diagrams 1,2,10
+
+Michael Quach
+UI design and UI updating signals
+Button handling
+Signal handling
+Inactivity shutdown method
+Fault shutdown method and fault simulation method
+Fastforward method
+Reset method
+Therapy active, power off, and isDisabled safeguard in various methods
+Debug message handling
+Memory management handling
+End therapy (in collaboration)
+Use cases 7 and 8
+Sequence diagrams for 7 and 8
+General fixes
+
+
+Collaboratively (over discord and github):
+UML Class diagram and overall design
+Activity diagram
+Traceability matrix
+Use case model diagram
+Review of each others’ work i.e. diagrams
+Code review
+
+We are all in agreement that our teammates were amazing and contributed equally and went above and beyond for this project.
+
+----------------------------
+Included project files:
+----------------------------
+CES_Device.pro
+
+----------------------------
+Included header files:
+----------------------------
+battery.h
+devicecontroller.h
+mainwindow.h
+sensor.h
+therapy.h
+
+--------------------------
+Included class files:
+--------------------------
+battery.cpp
+devicecontroller.cpp
+main.cpp
+mainwindow.cpp
+sensor.cpp
+therapy.cpp
+
+---------------------
+Included forms:
+---------------------
+mainwindow.ui
+
+--------------------------
+Instructions to Run:
+--------------------------
+Launch QtCreator. Open the Project (File->Open File Or Project, select the .pro file). Press Ctrl+R to run.
+
+------------------------
+Tested Scenarios
+------------------------
+All scenarios, as listed below and in the traceability matrix, are functional.
+- Power device on or off
+- Continuous circuit check for skin contact
+- Frequency changed
+- Waveform changed
+- Countdown cycle changed
+- Current changed
+- Therapy begins when skin contact is made
+- Battery warning issued when at 5%
+- Battery warning issued at 2% and powers off
+- Saved Therapy properly displays the Duration, Current, Frequency and Waveform of Therapy when used
+- Therapy saving on Therapy end if Therapy Saving is On
+- Therapy saving on Toggling Power off mid Therapy if Therapy Saving is On
+- Therapy saving cannot be toggled during a Therapy session
+- Countdown Cycle, Toggle Frequency, Toggle Waveform cannot be toggled during a Therapy session
+
